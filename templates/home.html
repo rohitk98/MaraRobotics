@@ -21,6 +21,12 @@
     <p class="lead">
       We are a Robotics company, we design, develop & deploy robots that will minimize the manual effort.
     </p>
+      <h2>Robots In Store</h2>
+      <div>
+        {% for robot in robots %}
+          {% include 'robotlist.html' %}
+        {% endfor %}
+      </div>
       <div class="text-center">
         <button class="btn btn-primary btn-lg">Contact Us</button>
         <p class="mt-4 mb-2">Copyright 2024, MARA</p>
